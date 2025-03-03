@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main  # nebo "master", podle toho, co máš na GitHubu
 
-media_folder: "images/uploads"  # Kde budou nahrané obrázky
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
