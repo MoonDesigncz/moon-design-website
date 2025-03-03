@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main  # nebo "master", podle toho, co máš na GitHubu
+  branch: main  # pokud máš větev "master", změň na "master"
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "pages"
@@ -14,4 +14,4 @@ collections:
         file: "index.html"
         fields:
           - { label: "Titulek", name: "title", widget: "string" }
-          - { label: "Hlavní text", name: "hero_text", widget: "text" }
+          - { label: "Popis", name: "description", widget: "text" }
