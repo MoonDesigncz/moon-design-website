@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: preview  # pokud máš větev "master", změň na "master"
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Stránky"
+    files:
+      - label: "Hlavní stránka"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Titulek", name: "title", widget: "string" }
+          - { label: "Popis", name: "description", widget: "text" }
