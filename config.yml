@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main  # nebo "master", podle toho, co máš na GitHubu
+
+media_folder: "images/uploads"  # Kde budou nahrané obrázky
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Stránky"
+    files:
+      - label: "Hlavní stránka"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Titulek", name: "title", widget: "string" }
+          - { label: "Hlavní text", name: "hero_text", widget: "text" }
